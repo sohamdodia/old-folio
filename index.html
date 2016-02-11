@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0" />
+	<title>sohamdodia.in</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="css/particle.css"> -->
+	<script type="text/javascript" src="scripts/jquery-2.1.4.js"></script>
+	<script type="text/javascript" src="scripts/general.js"></script>
+	<script type="text/javascript" src="scripts/autoscroll.js"></script>
+	  <script src="scripts/jquery.js"></script>
+    <script src="scripts/typed.js" type="text/javascript"></script>
+    <script src="scripts/waypoint.js" type="text/javascript"></script>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/demo.css" /> -->
+    <link rel="stylesheet" type="text/css" href="css/component.css" />
+    <link href="css/quotes.css" rel="stylesheet"></link>
+    <link href='css/font.css' rel='stylesheet' type='text/css'>
+	<!-- <link rel="stylesheet" href="css/reset.css"> -->
+	<!-- // <script type="text/javascript" src="js/alphabet/js"></script> -->
+
+
+<script src="scripts/quotes.js" type="text/javascript"></script>
+<!-- <link rel="stylesheet" href="css/devicon.css">
+<link rel="stylesheet" href="css/devicon.min.css">
+<link rel="stylesheet" href="css/devicon-colors.css"> -->
+
+  <!--   <script type='text/javascript' src='scripts/jquery.particleground.js'></script>
+  // <script type='text/javascript' src='scripts/demo.js'></script> -->
+  <script>
+ jQuery(document).ready(function($) {
+  $('#words').quoteRotator();
+ });
+ </script>
+	 <script>
+    $(function(){
+
+        $("#typed").typed({
+            // strings: ["Hello There!", "My Self is Soham Dodia!", "Welcome To my little Corner n the internet"],
+            stringsElement: $('#typed-strings'),
+            typeSpeed: 100,
+            backDelay: 500,
+            loop: true,
+            contentType: 'html', // or text
+            // defaults to false for infinite loop
+            loopCount: false,
+            callback: function(){ foo(); },
+            resetCallback: function() { newTyped(); }
+        });
+
+        $(".reset").click(function(){
+            $("#typed").typed('reset');
+        });
+
+    });
+
+    function newTyped(){ /* A new typed object */ }
+
+    function foo(){ console.log("Callback"); }
+
+    </script>
+
+    <style>
+        /* code for animated blinking cursor */
+        .typed-cursor{
+            opacity: 1;
+            font-weight: 100;
+            -webkit-animation: blink 0.7s infinite;
+            -moz-animation: blink 0.7s infinite;
+            -ms-animation: blink 0.7s infinite;
+            -o-animation: blink 0.7s infinite;
+            animation: blink 0.7s infinite;
+        }
+        @-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-webkit-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-moz-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-ms-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+        @-o-keyframes blink{
+            0% { opacity:1; }
+            50% { opacity:0; }
+            100% { opacity:1; }
+        }
+    </style>
+
+</head>
+<body>
+
+	<header>
+		<nav id="nav-wrap">
+			<ul class="">
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#home" class="closeOnClick"><li>Home</li></a>
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#whoami" class="closeOnClick"><li>Who am i?</li></a>
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#education" class="closeOnClick"><li>Education</li></a>
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#projects" class="closeOnClick"><li>Projects</li></a>
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#skills" class="closeOnClick"><li>Skills</li></a>
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#quotes" class="closeOnClick"><li>Quotes</li></a>
+				<a data-scroll data-options='{ "easing": "easeOutQuad" }' href="#contact" class="closeOnClick"><li>Contact Me</li></a>
+			</ul>
+			<div class="handle">Menu</div>
+		</nav>
+	<!-- 	<div id="container" style="white-space:nowrap">
+
+		    <div id="image" style="display:inline;">
+		        <img src="images/myimg.jpg" height="350px" width="350px" />
+		    </div>
+
+		    <div id="texts" style="display:inline; white-space:nowrap;"> 
+		        A very long text(about 300 words) 
+		    </div>
+
+		</div> -->
+	</header>
+	<div id="home" class="contentbox" >
+	<!-- <div id="particles-js"> -->
+			<!-- <div id="text">
+				<h2>Hello There</h2>
+				<p>Welcome to my little corner on the internet.</p>
+			</div> -->
+			
+				    <div id="typed-strings">
+				        <p>Hello There!</p>
+				        <p>My Self : Soham Dodia.</p>
+				        <p>Welcome To My little Corner On the Internet.</p>
+				        <p>Check Out the website to know more!</p>
+				        <p>Thank You! :)</p>
+				    </div>
+				    <div id="text">
+				    	<span id="typed"></span>      		
+				    </div>
+				    <div id="particles-js"></div>
+					<div id="myimg">
+						<img src="images/myimg.jpg" id="sohamsimage"/>
+					</div>
+
+				   <!-- <script src="js/rAF.js"></script>
+      //   		  <script src="js/demo-2.js"></script> -->
+	<!-- </div> -->
+	</div>
+
+<script src="scripts/particles.js"></script>
+<script src="scripts/app.js"></script>
+
+<!-- stats.js -->
+<script src="scripts/stats.js"></script>
+		
+	
+	
+	<!-- About Me -->
+	<div id="whoami" class="contentbox">
+		<b><u>Who am i?</u></b>
+		<div class="paddingfromtop">
+		<p>Hello There !</p>
+		<p>My Self : Soham Dodia , A Geek Who Loves Travelling and Listening Songs
+		</p>
+		<p>Incurable Internet Nerd.</p>
+		<p>20 Years old boy who is TechEnthusiastic.</p>
+		<p>CS Undergrade.</p>
+		<p>I like to do Coding for Passion.</p>
+		<p>Like to talk with people and share my ideas with them.</p>
+		<p>I am little bit shy at first but once i am comfortable with you trust me you will never be able to find a crazy person like me. :P</p>
+		<p>Wanna Know About me More? Then Be my Frined :)</p>
+		<br />
+
+		</div>
+	</div>
+
+	<!-- Education -->
+	<div id="education" class="contentbox">
+		<b><u>Education</u></b>
+		<br>
+		<br>
+		<div class="paddingfromtop">
+		<u>S.S.C</u>
+		<p>Completed My Secondary Education from Sett R.J.J High School,Valsad</p>
+		<br>
+		<u>H.S.C</u>
+		<p>Completed My Higher Secondary Education From Sett R.J.J School,Valsad </
+		p>
+		<br>
+		<br>
+		<u>Bachelor Of Engineering</u>
+		<p>Currently in 3<sup>rd</sup> year of Computer Science and Engineering and purching my bachelor degree from babaria institute of technology.</p>
+		</div>
+	</div>
+
+	<!-- Projects -->
+	<div id="projects" class="contentbox">
+		<b><u>Projects</u></b>
+		<br>
+		<div class="paddingfromtop">
+		<p><u>Itinerate</u></p>
+		<p>Itinerate is an online itinerary generator.It is developed by me and my two mates at InOut 1.0 Hackathon which was held at SVNIT,Surat.</p>
+		<p><u>Rural Fuse</u></p>
+		<p>Rural Fuse is Web-Apllication which is developed at InOut 2.0 Hackathon which was held at SVNIT,Surat.It's a web-portal to give the job and the theme was Connect the Rural India in which it is developed. </p>
+		<p><u>Papers</u></p>
+		<p>Papers is an android application which is developed by me for the 5th Sem CSE Students.In this app you can find all the papers of all the subject along with the syllabus for all the subject which we had to study</p>
+		<p><u>Chopper Rush</u></p>
+		<p>Chopper Rush is an android game which i learnt from the internet.In this you have to defend the chopper from walls and missles.You have to dodge the missile and have to stay alive.</p>
+		<p><u>XITIJ</u></p>
+		<p>Xitij is a youthfest of gtu.Me and My Friend Redesigned some parts of the website although there's not to much to change. :P</p>
+		<p><u>NFC Technology</u></p>
+		<p>Currently trying to fight with the NFC tag.NFC Technology is our topic for design engineering and i am developing website for this topic and also trying to learn how to do coding in NFC.</p>
+		<p>And Many More is On the Way.. ;) :)</p>
+		<br/>
+		</div>
+	</div>
+
+	<div id="skills" class="contentbox">
+
+		<b><u>Skills</u></b>
+		<div class="paddingfromtop">
+
+		<h5>Languages I know</h5>
+		<p>-HTML,CSS</p>
+		<p>-JavaScript & Jquery</p>
+		<p>-PHP</p>
+		<p>-MySQL</p>
+		<p>-React JS</p>
+		<p>-C</p>
+		<p>-C++</p>
+		<p>-Java</p>
+		<p>-Python</p>
+		</div>
+		
+
+	
+	</div>
+	<div id="quotes" class="contentbox">
+	
+		<b><u>Quotes</u></b>
+		<div class="paddingfromtop">
+		<div id="words">
+			<ul class="word-container">
+
+			<li data-author="--  Albert Einstein  " data-easeout="fadeInDown">Learn from yesterday, live for today, hope for tomorrow.</li>
+
+			<li data-author="-- Mortimer Adler" data-easeout="fadeInDown">The purpose of learning is growth, and our minds, unlike our bodies, can continue growing as long as we live</li>
+
+			<li data-author="-- Abraham Lincoln" data-easeout="fadeInDown">Out of clutter,find simplicity.From discord,find harmony.In the middle of difficulty lies opportunity.</li>
+
+			<li data-author="-- Goethe" data-easein="fadeInDown">Whatever you can do, or dream you can do, begin it. Boldness has genius, power, and magic in it. Begin it now. </li>
+
+			<li data-author="-- Albert Einstien" data-easeout="fadeInDown">It's fine to celebrate success but it is more important to heed the lessons of failure.</li>
+			<li data-author="---  Arlo Guthrie (1947 - )" data-easein="fadeInDown">You can't have a light without a dark to stick it in. </li>
+
+			<li data-author="---  Bill Gates (Microsoft)" data-easein="fadeInDown">If you think your teacher is tough, wait until you get a boss. He doesn't have tenure.</li>
+
+			</ul>
+
+			<div class="quote">
+				<div class="quote-content">
+				</div>
+				<cite class="quote-author"></cite>
+			</div>
+		</div>
+	</div>
+	</div>
+	<!-- Contact me -->
+	<div id="contact" class="contentbox">
+		<b><u>Contact Me</u></b>
+		<br />
+		<br />
+		<div class="paddingfromtop">
+		<div class="container">
+		<div id="buttons">
+			<a href="#" id="facebook">
+				<div class="social-btn" id="fb">
+					<a href="http://www.facebook.com/soham.dodia.7" title="facebook" target="_blank" ><div class="content" id="fb1">b</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+<div class="container">
+		<div id="buttons">
+			<a href="#" id="twitter">
+				<div class="social-btn" id="tw">
+					<a href="http://www.twitter.com/sohamdodia27" title="twitter" target="_blank"><div class="content" id="tw1">a</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+<div class="container">
+		<div id="buttons">
+			<a href="#" id="googleplus">
+				<div class="social-btn" id="g">
+					<a href="https://plus.google.com/+SohamDodia" title="googleplus" target="_blank"><div class="content" id="g1">c</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+<div class="container">
+		<div id="buttons">
+			<a href="#" id="instagram">
+				<div class="social-btn" id="insta">
+					<a href="http://www.instagram.com/soham_227" title="instagram" target="_blank"><div class="content" id="insta1">x</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+<div class="container">
+		<div id="buttons">
+			<a href="#" id="linkedin">
+				<div class="social-btn" id="li">
+					<a href="http://www.facebook.com/soham.dodia.7" title="linkedin" target="_blank"><div class="content" id="li1">j</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+<div class="container">
+		<div id="buttons">
+			<a href="#" id="github">
+				<div class="social-btn" id="git" >
+					<a href="http://www.github.com/soham227" 
+					title="github"target="_blank"><div class="content" id="git1">Q</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+	<div class="container">
+		<div id="buttons">
+			<a href="#" id="mail">
+				<div class="social-btn" id="mail">
+					<a href="mailto:sohamdodia@gmail.com" title="sohamdodia@gmail.com"target="_blank"><div class="content" id="mail1">@</div></a>
+				</div>
+			</a>
+		</div>
+	</div>
+
+<br />
+		<b id="contacttext">Talk to me about anything. If you’d like to work with me,<br> or 
+		even if you just need a hug, I’ll get back to you shortly.</b>
+		<br />
+		<br />
+		<br />
+		<br />
+		<br />
+		<div id="getintouch">
+		
+			<a href="https://sohamdodia.typeform.com/to/UPjUBf" target="_blank">GET IN TOUCH</a>
+		
+		</div>
+		<!-- <div id="form-main">
+  			<div id="form-div">
+			    <form class="form" id="form1" action="mail.php" method="post">
+			      
+			      <p class="name">
+			        <input name="name" type="text" class="validate[required,custom[onlyLetter],length[0,100]] feedback-input" placeholder="What can i call you?" id="name" />
+			      </p>
+			      
+			      <p class="email">
+			        <input name="email" type="text" class="validate[required,custom[email]] feedback-input" id="email" placeholder="Where can i contact back you?" />
+			      </p>
+			      
+			      <p class="text">
+			        <textarea name="text" class="validate[required,length[6,300]] feedback-input" id="message" placeholder="What you wanna say to me?"></textarea>
+			      </p>
+			      
+			      
+			      <div class="submit">
+			        <input type="submit" value="SEND" id="button-blue"/>
+			        <div class="ease"></div>
+			      </div>
+			    </form>
+  			</div>	
+  			</div>
+		</div> -->
+	</div>
+	</div>
+
+
+
+
+	<script src='scripts/smooth-scroll.js'></script>
+	<script>
+		smoothScroll.init({
+			speed: 1000,
+			easing: 'easeInOutCubic',
+			offset: 0,
+			updateURL: true,
+			callbackBefore: function ( toggle, anchor ) {},
+			callbackAfter: function ( toggle, anchor ) {}
+		});
+	</script>
+</body>
+</html>
